@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheik Portfolio</title>
+    <link rel="icon" type="image/png" href="image/Sheik logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="dark-mode">
+    <button id="modeToggle" class="mode-toggle">
+        <img src="image/day-night_1312343.png" alt="Toggle Mode" />
+    </button>
+    <div id="loader">
+        <p id="loading-text">Loading<span class="dots"></span></p>
+    </div>
+    <button id="scrollUpBtn" class="scroll-up-btn">
+        <i class="bi bi-arrow-up-circle-fill scroll-up-icon"></i>
+    </button>
+
+
+
+    <div class="navbar" id="navbar">
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        <div class="logo">
+            <img src="image/Sheik logo.png" alt="Logo">
+        </div>
+        <div class="center" id="menu">
+            <a href="#services">Services</a>
+            <a href="#works">Works</a>
+            <a href="#resume">Resume</a>
+            <a href="#skills">Skills</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="button-container">
+            <a href="#contact" class="hire-me">Hire Me!</a>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="text-section">
+            <h1>I am Sheik</h1>
+            <h1 class="animated-text">
+                <div><span class="highlight">Next-Level</span> Web Developer.</div>
+                <div><span class="highlight">Creative</span> Web Designer.</div>
+                <div><span class="highlight">Problem-Solving</span> Engineer.</div>
+            </h1>
+            <p class="para">I break down complex user experience problems to create integrity-focused solutions that
+                connect billions of people.</p>
+            <a href="image/sheik-Resume.pdf" class="btn" download="Sheik_Resume.pdf">Download CV</a>
+
+        </div>
+        <div class="image-section">
+            <img src="image/Profil image 1.JPG" alt="Profile">
+        </div>
+        <div class="social-icons">
+            <a href="https://x.com/sheikTVK" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/sheik_jo_offical__/?hl=en" target="_blank"><i
+                    class="bi bi-instagram"></i></a>
+            <a href="https://github.com/sheik-sk" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/sheik-ibramusha-1a1386250?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoVP2D%2FxtRoW8XAiUec%2BKLA%3D%3D"
+                target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="stats-container">
+        <div class="stat">
+            <span class="number" data-target="1">0</span>
+            <span class="text">Years of Experience</span>
+        </div>
+        <div class="stat">
+            <span class="number" data-target="6">0</span>
+            <span class="text">Projects Completed</span>
+        </div>
+        <div class="stat">
+            <span class="number" data-target="6">0</span>
+            <span class="text">Happy Clients</span>
+        </div>
+    </div>
+
+    <section id="services">
+        <section class="services">
+            <h2 class="section-title"><span>What I Do</span> </h2>
+            <div class="service-item">
+                <span class="service-number">01/</span>
+                <i class="bi bi-code-slash icon"></i>
+                <div class="service-details">
+                    <h3>Web Development</h3>
+                    <p>Ensure your website looks great on any device, with layouts that adapt to different screen sizes
+                        seamlessly.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <span class="service-number">02/</span>
+                <i class="bi bi-brush-fill icon"></i>
+                <div class="service-details">
+                    <h3>UI/UX Design</h3>
+                    <p>Set up user-friendly CMS solutions like WordPress or custom-built options so clients can manage
+                        content easily.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <span class="service-number">03/</span>
+                <i class="bi bi-pencil-fill icon"></i>
+                <div class="service-details">
+                    <h3>Content Writing</h3>
+                    <p>Build and integrate APIs to connect websites with third-party applications, enhancing
+                        functionality and performance.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <span class="service-number">04/</span>
+                <i class="bi bi-megaphone-fill icon"></i>
+                <div class="service-details">
+                    <h3>Digital Marketing</h3>
+                    <p>Refresh outdated websites with modern, appealing designs that align with current brand goals and
+                        user expectations.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="works">
+        <div class="wo-container">
+            <h1 class="title">My Recent Works</h1>
+            <p>We put your ideas and wishes in the form of a unique web project that inspires you and your customers.
+            </p>
+            <div class="buttons">
+                <button onclick="filterCards('All')">All</button>
+                <button onclick="filterCards('Project 2')">UX/UI</button>
+                <button onclick="filterCards('Project 3'); filterCards('Project 4')">website</button>
+                <button onclick="filterCards('Project 1')">Portfolio</button>
+            </div>
+            <div class="grid">
+                <div class="card show">
+                    <img src="image/Pottfoilo-image.png" alt="Project 1">
+                    <div class="overlay">
+                        <h1 class="sp">Portfolio (UI & UX)</h1>
+                        <p>Design By Figma created by HTML,CSS,JS</p>
+                    </div>
+                </div>
+                <div class="card show">
+                    <img src="image/Icecream&cake image.png" alt="Project 2">
+                    <div class="overlay">
+                        <h1 class="sp">UI & UX</h1>
+                        <p>Design By Figma created by HTML,CSS,JS</p>
+                    </div>
+                </div>
+                <div class="card show">
+                    <img src="image/real-estate-image.png" alt="Project 3">
+                    <div class="overlay">
+                        <h1 class="sp">website</h1>
+                        <p>Created by HTML,CSS,JS</p>
+                    </div>
+                </div>
+                <div class="card show">
+                    <img src="image/agency-image.png" alt="Project 4">
+                    <div class="overlay">
+                        <h1 class="sp">website</h1>
+                        <p>Created by HTML,CSS,JS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="resume">
+        <div class="rs-container">
+            <!-- Left Column -->
+            <div class="column left-column">
+                <div class="tr-title">
+                    <i class="bi bi-book"></i> My Education
+                </div>
+                <div class="cd-card">
+                    <h3>2024</h3>
+                    <p>Web Development & React Js<br>SLA Institute, Chennai</p>
+                </div>
+                <div class="cd-card">
+                    <h3>2023</h3>
+                    <p>Python & C, C++<br>Venus Technology, Madurai</p>
+                </div>
+                <div class="cd-card">
+                    <h3>2023</h3>
+                    <p>Diploma Mechanical Engineering<br>Latha Mathavan Polytechnic College, Madurai
+                        Percentage - 75%
+                    </p>
+                </div>
+                <div class="cd-card">
+                    <h3>2023</h3>
+                    <p>American College Matriculation Higher Secondary School<br>Madurai 10th Std - 54%</p>
+                </div>
+            </div>
+
+            <!-- Center Column -->
+            <div class="column center-column">
+                <div class="tr-title">
+                    <i class="bi bi-code-slash"></i> My Projects
+                </div>
+                <div class="cd-card">
+                    <h3>2025</h3>
+                    <p>E-Commerce Website<br>HTML-5 & CSS</p>
+                </div>
+                <div class="cd-card">
+                    <h3>2024</h3>
+                    <p>Portfolio Website<br>HTML-5 & Tailwind</p>
+                </div>
+                <div class="cd-card">
+                    <h3>2024</h3>
+                    <p>Real-Estate Website<br>HTML-5 & CSS</p>
+                </div>
+                <div class="cd-card">
+                    <h3>2024</h3>
+                    <p>Agency Website<br>HTML-5 & CSS</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column right-column">
+                <div class="tr-title">
+                    <i class="bi bi-briefcase"></i> My Experience
+                </div>
+                <div class="cd-card">
+                    <h3>2024 Ibu Infotech</h3>
+                    <p>Full Stack Developer<br>internship</p>
+                </div>
+                <div class="cd-card">
+                    <h3>2025 Ibu Infotech</h3>
+                    <p>Full Stack Developer<br>Working</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="sk-container">
+            <h2><span>My Skills</span></h2>
+            <p class="a2">We put your ideas and thus your wishes in the form of a unique web project that inspires you
+                and your customers.</p>
+
+            <div class="skills">
+                <div class="skill-card">
+                    <img src="image/icons/html icon.png" alt="html">
+                    <div class="percentage">92%</div>
+                    <div class="skill-name">Html</div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/icons/Css icon.png" alt="Css">
+                    <div class="percentage">80%</div>
+                    <div class="skill-name">Css</div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/icons/js icon.png" alt="js">
+                    <div class="percentage">85%</div>
+                    <div class="skill-name">Java Script</div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/icons/wordpress icon.png" alt="WordPress">
+                    <div class="percentage">99%</div>
+                    <div class="skill-name">WordPress</div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/icons/React js icon.png" alt="React">
+                    <div class="percentage">89%</div>
+                    <div class="skill-name">React</div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/icons/python icon.png" alt="python">
+                    <div class="percentage">93%</div>
+                    <div class="skill-name">Python</div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/icons/figma icon.png" alt="figma">
+                    <div class="percentage">95%</div>
+                    <div class="skill-name">Figma</div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="image/icons/C++.png" alt="C++">
+                    <div class="percentage">90%</div>
+                    <div class="skill-name">C++</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="testimonials">
+        <div class="tr-container">
+            <div class="te-title">TESTIMONIALS</div>
+            <div class="te-heading">HAPPY CLIENTS TO <span class="te-highlight">SAYS</span></div>
+
+            <div class="testimonial-box">
+                <div class="quote">&ldquo;</div>
+                <p class="b1"><strong>GILROY IS A GREAT AND SUPER-PROFESSIONAL SERVICE PROVIDER, WHICH BROUGHT NEW
+                        TECHNOLOGIES, NEW METHODOLOGY, AND A FRESH PERSPECTIVE TO OUR PROJECT</strong></p>
+                <div class="client">
+                    <img src="image/Untitled_design__1___1_-removebg-preview.png" alt="Client">
+                    <span style="color: black;">Jack Metiyo Shina, NYC, USA</span>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <div class="arrow">&#x25C0;</div>
+                <div class="arrow">&#x25B6;</div>
+            </div>
+        </div>
+    </section>
+    <section class="news-section">
+        <h3 class="sub-title">RECENT NEWS DESK</h3>
+        <h1 class="main-title">LATEST NEWS & <span>BLOGS</span></h1>
+        <p style="margin-bottom: 40px;">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Sint Ratione
+            Reprehenderit</p>
+        <div class="news-container">
+            <div class="news-card">
+                <img src="image/laptop.jpg" alt="News 1">
+                <div class="news-content">
+                    <p class="date">September 28, 2019</p>
+                    <h2>HARNESS THE POWER OF YOUR DREAMS...</h2>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="image/laptop 2.jpg" alt="News 2">
+                <div class="news-content">
+                    <p class="date">September 28, 2019</p>
+                    <h2>ADDICTION WHEN GAMBLING BECOMES...</h2>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="image/reading book.jpg" alt="News 3">
+                <div class="news-content">
+                    <p class="date">September 28, 2019</p>
+                    <h2>HYPNOSIS 12 STEPS TO ACQUIRE MIND POWER...</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 style="text-align: center; margin-top: 60px;"><span style="color: #b4a7ff;">Contact</span></h1>
+    <br><br><br>
+
+    <section id="contact">
+        <div class="co-container">
+            <div class="le-left">
+                <p>GET IN TOUCH</p>
+                <h1>Let is make your brand brilliant!</h1>
+                <p>If you would like to work with us or just want to get in touch, we’d love to hear from you!</p>
+                <p class="hd-highlight">Sheikibramusha0729@gmail.com</p>
+                <div class="social-link">
+                    <a href="https://x.com/sheikTVK"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/sheik_jo_offical__/?hl=en"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/sheik-sk"><i class="bi bi-github"></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/sheik-ibramusha-1a1386250?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoVP2D%2FxtRoW8XAiUec%2BKLA%3D%3D"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="re-right">
+                <input type="text" placeholder="Name">
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="Email">
+                <input type="password" id="password" name="password" autocomplete="current-password" required
+                    placeholder="password">
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Message"></textarea>
+                <button class="ct-button">SEND A MESSAGE</button>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <footer>
+        <div class="footer-content">
+            <img src="image/Sheik logo.png" alt="Logo" class="l-logo">
+            <nav class="footer-nav">
+                <ul>
+
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p>© 2026 All rights reserved by Ibu Info Tech</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
